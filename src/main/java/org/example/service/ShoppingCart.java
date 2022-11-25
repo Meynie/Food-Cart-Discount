@@ -1,6 +1,6 @@
-package ru.yandex.praktikum.workshop.service;
+package org.example.service;
 
-import ru.yandex.praktikum.workshop.model.Food;
+import org.example.model.Food;
 
 public class ShoppingCart {
     private Food[] products;

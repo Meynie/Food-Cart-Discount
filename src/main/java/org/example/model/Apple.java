@@ -1,6 +1,6 @@
-package ru.yandex.praktikum.workshop.model;
-import ru.yandex.praktikum.workshop.model.constants.Colour;
-import ru.yandex.praktikum.workshop.model.constants.Discount;
+package org.example.model;
+import org.example.model.constants.Colour;
+import org.example.model.constants.Discount;
 
 public class Apple extends Food{
     String colour;

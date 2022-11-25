@@ -1,9 +1,9 @@
-package ru.yandex.praktikum.workshop;
+package org.example;
 
-import ru.yandex.praktikum.workshop.model.Meat;
-import ru.yandex.praktikum.workshop.model.Apple;
-import ru.yandex.praktikum.workshop.model.Food;
-import ru.yandex.praktikum.workshop.service.ShoppingCart;
+import org.example.model.Meat;
+import org.example.model.Apple;
+import org.example.model.Food;
+import org.example.service.ShoppingCart;
 
 public class Main {
     // Реализовать корзину ru.yandex.praktikum.workshop.service.ShoppingCart - цена за все товары, цена со скидкой, цена isFresh

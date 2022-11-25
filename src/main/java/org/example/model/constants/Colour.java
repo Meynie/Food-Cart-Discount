@@ -1,4 +1,4 @@
-package ru.yandex.praktikum.workshop.model.constants;
+package org.example.model.constants;
 
 public class Colour {
     public static final String RED = "red";

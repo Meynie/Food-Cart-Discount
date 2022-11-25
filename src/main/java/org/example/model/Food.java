@@ -1,4 +1,4 @@
-package ru.yandex.praktikum.workshop.model;
+package org.example.model;
 
 public abstract class Food implements Discountable {
     protected int amount;

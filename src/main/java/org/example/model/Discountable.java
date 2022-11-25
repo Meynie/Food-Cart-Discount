@@ -1,4 +1,4 @@
-package ru.yandex.praktikum.workshop.model;
+package org.example.model;
 
 public interface Discountable {
     double getDiscount();
