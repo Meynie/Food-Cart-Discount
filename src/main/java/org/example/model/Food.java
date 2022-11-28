@@ -5,14 +5,13 @@ public abstract class Food implements Discountable {
     protected double price;
     protected boolean isVegetarian ;
 
-    protected Food(int amount, double price, boolean isFresh) {
+    protected Food(int amount, double price, boolean isVegetarian) {
         this.amount = amount;
         this.price = price;
-        this.isVegetarian  = isFresh;
+        this.isVegetarian  = isVegetarian;
     }
 
     public double getTotalPriceWithDiscount(){
-        //double totalPrice = 0;
         if (getDiscount() == 0){
             return getTotalPrice();
         }
@@ -21,6 +20,13 @@ public abstract class Food implements Discountable {
 
     public double getTotalPrice() {
         return amount * price;
+    }
+
+    public double getVegPrice() {
+        if (isVegetarian) {
+            return getTotalPrice();
+        }
+        return 0;
     }
 
     @Override

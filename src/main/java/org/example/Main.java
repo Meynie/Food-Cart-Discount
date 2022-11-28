@@ -6,19 +6,15 @@ import org.example.model.Food;
 import org.example.service.ShoppingCart;
 
 public class Main {
-    // Реализовать корзину ru.yandex.praktikum.workshop.service.ShoppingCart - цена за все товары, цена со скидкой, цена isFresh
-    // Реализовать класс Products - кол-во, цена за ед. товара и sFresh
-    // Реализовать интерфейса ru.yandex.praktikum.workshop.model.Discountable
-
     public static void main(String[] args) {
-        Food[] products = {
-                new Meat(2, 100),
-                new Apple(1, 10, "red"),
-                new Apple(1, 6, "green")
+        Food[] food = {
+                new Meat(5, 100),
+                new Apple(10, 50, "red"),
+                new Apple(8, 60, "green")
         };
-        ShoppingCart shoppingCart = new ShoppingCart(products);
+        ShoppingCart shoppingCart = new ShoppingCart(food);
         System.out.println(shoppingCart.getTotalPrice());
         System.out.println(shoppingCart.getTotalPriceWithDiscount());
-        System.out.println(shoppingCart.getTotalPriceWithDiscount());
+        System.out.println(shoppingCart.getTotalVegeterianPrice());
     }
 }
